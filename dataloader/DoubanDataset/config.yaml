@@ -1,0 +1,11 @@
+metadata: sentence
+sent_emb_model: text-embedding-3-large
+sent_emb_dim: 3072
+sent_emb_batch_size: 100
+sent_emb_pca: 0
+n_codebook: 32
+codebook_size: 256
+faiss_omp_num_threads: 16
+opq_use_gpu: false
+opq_gpu_id: 0
+openai_api_key: null 

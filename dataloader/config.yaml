@@ -1,0 +1,25 @@
+# Amazon Reviews 2014
+# ==========================================
+
+# Basic Settings
+# Available categories: Books, Electronics, Movies_and_TV, CDs_and_Vinyl,
+#          Clothing_Shoes_and_Jewelry, Home_and_Kitchen, Kindle_Store,
+#          Sports_and_Outdoors, Cell_Phones_and_Accessories,
+#          Health_and_Personal_Care, Toys_and_Games, Video_Games,
+#          Tools_and_Home_Improvement, Beauty, Apps_for_Android,
+#          Office_Products, Pet_Supplies, Automotive,
+#          Grocery_and_Gourmet_Food, Patio_Lawn_and_Garden, Baby,
+#          Digital_Music, Musical_Instruments, Amazon_Instant_Video
+category: Musical_Instruments
+metadata: sentence  # none / raw / sentence
+split: leave_one_out  # leave_one_out
+
+# Sentence Embedding Settings
+# Supported models:
+#   - sentence-transformers models (e.g., all-MiniLM-L6-v2)
+#   - OpenAI API models (e.g., text-embedding-3-large, text-embedding-3-small)
+sent_emb_model: text-embedding-3-large
+sent_emb_dim: 3072
+sent_emb_pca: 512
+openai_api_key: None
+openai_base_url: None
