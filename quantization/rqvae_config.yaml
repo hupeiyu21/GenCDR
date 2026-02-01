@@ -12,26 +12,31 @@ data_processing:
   sent_emb_model: "text-embedding-3-large"
   sent_emb_dim: 3072
   sent_emb_batch_size: 1024
-  sent_emb_pca: 512 
+  sent_emb_pca: 512
   faiss_omp_num_threads: 16
   opq_use_gpu: false
   opq_gpu_id: 0
-  openai_api_key: sk-492a02uVsAauNrYsP4YRW2pvAsELc20hoHJeUh2Sop3GiL3C
+  openai_api_key: 
   openai_base_url: https://yunwu.ai/v1
 
 RQ-VAE:
-  input_dim: 512 
+  input_dim: 512
   hidden_dim: [1024, 512]
   latent_dim: 256
   num_layers: 3
-  code_book_size: 2048  
+  code_book_size: 2048
   dropout: 0.0
-  beta: 0.25            
-  epochs: 3000          
+  beta: 0.25
+  epochs: 3000
   batch_size: 8192
   optimizer: "AdamW"
   lr: 0.001
   weight_decay: 0.0
+
+  # ===== LoRA / MoE-style Adapter Config =====
+  lora_r: 8
+  lora_alpha: 16
+  lora_dropout: 0.1
 
 training:
   device: "cuda:0"
